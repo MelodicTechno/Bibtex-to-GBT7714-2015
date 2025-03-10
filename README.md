@@ -93,10 +93,13 @@ or
     poetry run python main.py ./ref.bib
    
   ```
+
 or
+
   ```sh
     python main.py ./ref.bib
   ```  
+
 Replace ref.bib with the name of your bibtex file.
 
 
@@ -109,6 +112,14 @@ For example, if you have a bibtex file ref.bib, you can run the following comman
   ```sh
   python convert.py ref.bib
   ```
+
+To add more chinese surname that are not in the default list, you can add them to the data/Chinese_surname.csv file
+using the
+following code:
+
+    ```sh
+    python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
+    ```
 
 <!-- ROADMAP -->
 
