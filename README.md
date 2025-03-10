@@ -25,132 +25,118 @@
 [![MIT License][license-shield]][license-url]
 [![Patreon][patreon-shield]][patreon-url]
 
-
-
-<!-- PROJECT LOGO -->
+<!-- 项目LOGO -->
 <br />
 <div align="center">
   <img src="https://i.ibb.co/zQvJf2L/Vector.png" alt="Vector" height="200"/>
-  <h3 align="center">Bibtex to GB/T 7714-2015 Converter</h3>
+  <h3 align="center">Bibtex 转 GB/T 7714-2015 转换器</h3>
 
   <p align="center">
-    This project convert bibtex file into GBT7714 format
+    本项目用于将 bibtex 文件转换为 GB/T 7714 格式
     <br />
-    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=7FA63E9BBA56E60471AEDAEBDE44B14C"><strong>Explore the GB/T 7714-2015 »</strong></a>
+    <a href="https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=7FA63E9BBA56E60471AEDAEBDE44B14C"><strong>了解 GB/T 7714-2015 »</strong></a>
     <br />
-    <a href="https://github.com/54dbd/Bibtex-to-gbt7714/issues">Report Bug</a>
+    <a href="https://github.com/54dbd/Bibtex-to-gbt7714/issues">报告错误</a>
   </p>
 </div>
 
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- 关于本项目 -->
 
-## About The Project
+## 关于本项目
 
-This project aims to convert a bibtex file into GBT7714 format, which is a standard citation format used in Chinese
-academic publications. By converting the bibtex file into GBT7714 format, it allows for easier integration of references
-into Chinese academic papers.
-
+本项目旨在将 bibtex 文件转换为 GB/T 7714 格式，该格式是中国学术出版物常用的标准引用格式。  
+通过将 bibtex 文件转换为 GB/T 7714 格式，可以更方便地将参考文献集成到中文学术论文中。
 
 
 
-<!-- GETTING STARTED -->
 
-## Getting Started
+<!-- 快速开始 -->
 
-This project runs on python 3.9+, lower version is not tested.
+## 快速开始
 
-### Prerequisites
+本项目运行于 Python 3.9+，较低版本未经过测试。
 
-* python 3.9+
+### 环境
+
+* Python 3.9+
 * poetry
 
-### Installation
+### 安装步骤
 
-1. Clone the repo
+1. 克隆仓库
 
   ```sh
     git clone https://github.com/54dbd/Bibtex-to-gbt7714-converter.git
-  ```
+```
 
-2. Install poetry packages
+2. 安装 poetry 依赖
 
-  ```sh
-   poetry install
-  ```  
+```
+ poetry install
+ ```
 
-or
+或者使用 pip：
 
-  ```sh
-   pip install -r requirements.txt
-  ```  
+```
+ pip install -r requirements.txt
+```
 
-3. Run the converter script with the bibtex file as input:
+3. 运行转换脚本，并以 bibtex 文件作为输入：
 
-  ```sh
-    poetry run python main.py ./ref.bib
-   
-  ```
+```
+  poetry run python main.py ./ref.bib
+```
 
-or
+或者
 
-  ```sh
-    python main.py ./ref.bib
-  ```  
+```
+  python main.py ./ref.bib
+```
 
-Replace ref.bib with the name of your bibtex file.
+将 ref.bib 替换为你的 bibtex 文件名。
 
+<!-- 使用示例 -->
 
-<!-- USAGE EXAMPLES -->
+## 使用方法
 
-## Usage
+例如，如果你有一个 bibtex 文件 ref.bib，可以运行以下命令将其转换为 GB/T 7714 格式：
 
-For example, if you have a bibtex file ref.bib, you can run the following command to convert it to GBT7714 format:
+python convert.py ref.bib
 
-  ```sh
-  python convert.py ref.bib
-  ```
+如果你需要添加默认列表中没有的中文姓氏，可以使用以下代码将它们添加到 data/Chinese_surname.csv 文件中：
 
-To add more chinese surname that are not in the default list, you can add them to the data/Chinese_surname.csv file
-using the
-following code:
+python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
 
-    ```sh
-    python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
-    ```
+<!-- 开发规划 -->
 
-<!-- ROADMAP -->
+## 开发规划
 
-## Roadmap
+- [x] 支持 arXiv 格式输入
+- [x] 支持常见格式输入
+- [ ] 支持所有现有格式
+- [ ] 针对不同类型的媒体进行专门处理
+- [ ] 支持多语言输入
+  - [x] 英文
+  - [x] 中文（未测试，考虑到本项目主要用于将国际参考文献转换为中文学术引用格式）
 
-- [x] Support arxiv format input
-- [x] Support common format input
-- [ ] Support all the existing format
-- [ ] Deal every kind of media in different way specifically
-- [ ] Multi-language input support
-  - [x] English
-  - [x] Chinese(no tested, considering this project is used for converting international references into chinese
-    academic reference format)
+查看 [open issues](https://github.com/54dbd/Bibtex-to-gbt7714/issues) 了解完整的待实现功能及已知问题。
 
-See the [open issues](https://github.com/54dbd/Bibtex-to-gbt7714/issues) for a full list of proposed features (and known
-issues).
+<!-- 贡献者 -->
 
+## 贡献者
 
+• 54dbd
 
-<!-- CONTRIBUTING -->
+• Freddie_1946
 
-## Contributing
+<!-- 许可证 -->
 
-- 54dbd
-- Freddie_1946
+## 许可证
 
-<!-- LICENSE -->
-
-## License
-
-Distributed under the GPL-3.0 License. See `LICENSE.txt` for more information.
+本项目基于 GPL-3.0 许可证分发。详情请查看 LICENSE.txt 文件。
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/54dbd/Bibtex-to-gbt7714.svg?style=for-the-badge
