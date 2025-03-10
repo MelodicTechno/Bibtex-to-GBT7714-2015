@@ -104,11 +104,15 @@
 
 例如，如果你有一个 bibtex 文件 ref.bib，可以运行以下命令将其转换为 GB/T 7714 格式：
 
+```
 python convert.py ref.bib
+```
 
 如果你需要添加默认列表中没有的中文姓氏，可以使用以下代码将它们添加到 data/Chinese_surname.csv 文件中：
 
+```
 python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
+```
 
 <!-- 开发规划 -->
 
@@ -128,9 +132,11 @@ python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
 
 ## 贡献者
 
-• 54dbd
+- 54dbd
 
-• Freddie_1946
+- Freddie_1946
+
+- Aegis1863
 
 <!-- 许可证 -->
 
