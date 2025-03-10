@@ -7,7 +7,7 @@ import sys
 import bibtexparser
 
 NOW = datetime.datetime.now().strftime('%Y-%m-%d')
-with open("Chinese_surname.csv", "r") as f:
+with open("data/Chinese_surname.csv", "r") as f:
     reader = csv.reader(f)
     CHINESE_SURNAME = [str(row[0]).upper() for row in reader]
 # print(f"Chinese surname: {CHINESE_SURNAME}")
@@ -151,10 +151,12 @@ def main():
     if len(sys.argv) > 1:
         bib_path = sys.argv[1]
     else:
-        bib_path = "./ref.bib"
+        bib_path = "data/ref.bib"
     result = bibtex_to_7714(bib_path)
+    folder = os.path.dirname(bib_path)
+    file_name = os.path.basename(bib_path).split('.')[0]
     # save to file
-    with open(f'{os.path.splitext(os.path.basename(bib_path))[0]}_bgt7714.txt', 'w') as f:
+    with open(f'{folder}/{file_name}_bgt7714.txt', 'w') as f:
         for index, item in enumerate(result):
             f.write(f'[{index + 1}] {item}\n')
 
