@@ -1,20 +1,20 @@
-[1] WANG Liyuan,ZHANG Xingxing,SU Hang,et al. A Comprehensive Survey of Continual Learning: Theory, Method and Application [EB/OL]. arXiv:cs.LG, 2023,2302.004871[2025-03-10]. https://arxiv.org/abs/2302.00487. 
-[2] CHEN Xiuwei. Dynamic Residual Classifier for Class Incremental Learning [EB/OL]. arXiv:cs.CV, 2023,2308.133051[2025-03-10]. https://arxiv.org/abs/2308.13305. 
-[3] DONG Jiahua,LIANG Wenqi,CONG Yang,et al. Heterogeneous Forgetting Compensation for Class-Incremental Learning [EB/OL]. arXiv:cs.CV, 2023,2308.033741[2025-03-10]. https://arxiv.org/abs/2308.03374. 
-[4] LI Zhizhong. Learning without Forgetting [EB/OL]. arXiv:cs.CV, 2017,1606.092821[2025-03-10]. https://arxiv.org/abs/1606.09282. 
-[5] GOU Jianping,YU Baosheng,MAYBANK S J,et al. Knowledge Distillation: A Survey [J]. International Journal of Computer Vision, 2021,129(6):1789–1819[2025-03-10]. http://dx.doi.org/10.1007/s11263-021-01453-z. 10.1007/s11263-021-01453-z. 
-[6] SHIN H,KWON LEE J,KIM J,et al. Continual Learning with Deep Generative Replay [EB/OL]. arXiv:cs.AI, 2017,1705.086901[2025-03-10]. https://arxiv.org/abs/1705.08690. 
-[7] AYUB A. EEC: Learning to Encode and Regenerate Images for Continual Learning [EB/OL]. arXiv:cs.CV, 2021,2101.049041[2025-03-10]. https://arxiv.org/abs/2101.04904. 
-[8] OSTAPENKO O,PUSCAS M,KLEIN T,et al. Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning [EB/OL]. arXiv:cs.NE, 2019,1904.031371[2025-03-10]. https://arxiv.org/abs/1904.03137. 
-[9] KEMKER R. FearNet: Brain-Inspired Model for Incremental Learning [EB/OL]. arXiv:cs.LG, 2018,1711.105631[2025-03-10]. https://arxiv.org/abs/1711.10563. 
+[1] WANG Liyuan,ZHANG Xingxing,SU Hang,et al. A Comprehensive Survey of Continual Learning: Theory, Method and Application [Z]. 2023,[2025-03-10]. 
+[2] CHEN Xiuwei. Dynamic Residual Classifier for Class Incremental Learning [Z]. 2023,[2025-03-10]. 
+[3] DONG Jiahua,LIANG Wenqi,CONG Yang,et al. Heterogeneous Forgetting Compensation for Class-Incremental Learning [Z]. 2023,[2025-03-10]. 
+[4] LI Zhizhong. Learning without Forgetting [Z]. 2017,[2025-03-10]. 
+[5] GOU Jianping,YU Baosheng,MAYBANK S J,et al. Knowledge Distillation: A Survey [J]. International Journal of Computer Vision, 2021,129(6):1789–1819[2025-03-10]. http://dx.doi.org/10.1007/s11263-021-01453-z. 
+[6] SHIN H,KWON LEE J,KIM J,et al. Continual Learning with Deep Generative Replay [Z]. 2017,[2025-03-10]. 
+[7] AYUB A. EEC: Learning to Encode and Regenerate Images for Continual Learning [Z]. 2021,[2025-03-10]. 
+[8] OSTAPENKO O,PUSCAS M,KLEIN T,et al. Learning to Remember: A Synaptic Plasticity Driven Framework for Continual Learning [Z]. 2019,[2025-03-10]. 
+[9] KEMKER R. FearNet: Brain-Inspired Model for Incremental Learning [Z]. 2018,[2025-03-10]. 
 [10] RIEMER M,KLINGER T,BOUNEFFOUF D,et al. Scalable Recollections for Continual Lifelong Learning [J]. Proceedings of the AAAI Conference on Artificial Intelligence, 2019,33(01):1352-1359[2025-03-10]. https://ojs.aaai.org/index.php/AAAI/article/view/3935. 10.1609/aaai.v33i01.33011352. 
-[11] ROSTAMI M. Complementary Learning for Overcoming Catastrophic Forgetting Using Experience Replay [EB/OL]. arXiv:cs.LG, 2019,1903.045661[2025-03-10]. https://arxiv.org/abs/1903.04566. 
-[12] LOPEZ-PAZ D. Gradient Episodic Memory for Continual Learning [EB/OL]. arXiv:cs.LG, 2022,1706.088401[2025-03-10]. https://arxiv.org/abs/1706.08840. 
-[13] CHAUDHRY A,RANZATO M,ROHRBACH M,et al. Efficient Lifelong Learning with A-GEM [EB/OL]. arXiv:cs.LG, 2019,1812.004201[2025-03-10]. https://arxiv.org/abs/1812.00420. 
-[14] ZENG Guanxiong,CHEN Yang,CUI Bo,et al. Continual learning of context-dependent processing in neural networks [J]. Nature Machine Intelligence, 2019,1(8):364–372[2025-03-10]. http://dx.doi.org/10.1038/s42256-019-0080-x. 10.1038/s42256-019-0080-x. 
+[11] ROSTAMI M. Complementary Learning for Overcoming Catastrophic Forgetting Using Experience Replay [Z]. 2019,[2025-03-10]. 
+[12] LOPEZ-PAZ D. Gradient Episodic Memory for Continual Learning [Z]. 2022,[2025-03-10]. 
+[13] CHAUDHRY A,RANZATO M,ROHRBACH M,et al. Efficient Lifelong Learning with A-GEM [Z]. 2019,[2025-03-10]. 
+[14] ZENG Guanxiong,CHEN Yang,CUI Bo,et al. Continual learning of context-dependent processing in neural networks [J]. Nature Machine Intelligence, 2019,1(8):364–372[2025-03-10]. http://dx.doi.org/10.1038/s42256-019-0080-x. 
 [15] GUO Yiduo,HU Wenpeng,ZHAO Dongyan,et al. Adaptive Orthogonal Projection for Batch and Online Continual Learning [C]. 2022,[2025-03-10]. https://api.semanticscholar.org/CorpusID:250290748. 
 [16] MIRZADEH S I,FARAJTABAR M,PASCANU R,et al. Understanding the Role of Training Regimes in Continual Learning [C]. 2020,337308--7320[2025-03-10]. https://proceedings.neurips.cc/paper_files/paper/2020/file/518a38cc9a0173d0b2dc088166981cf8-Paper.pdf. 
-[17] IMAN MIRZADEH S,FARAJTABAR M,GORUR D,et al. Linear Mode Connectivity in Multitask and Continual Learning [EB/OL]. arXiv:cs.LG, 2020,2010.044951[2025-03-10]. https://arxiv.org/abs/2010.04495. 
+[17] IMAN MIRZADEH S,FARAJTABAR M,GORUR D,et al. Linear Mode Connectivity in Multitask and Continual Learning [Z]. 2020,[2025-03-10]. 
 [18] LIU Haomiao,WANG Ruiping,SHAN Shiguang,et al. Deep supervised hashing for fast image retrieval [C]. 2016,2064--2072[2025-03-10]. 
 [19] ZHU Han,LONG Mingsheng,WANG Jianmin,et al. Deep hashing network for efficient similarity retrieval [C]. 2016,2415–2421[2025-03-10]. 
 [20] CAO Zhangjie,LONG Mingsheng,WANG Jianmin,et al. Hashnet: Deep learning to hash by continuation [C]. 2017,5608--5617[2025-03-10]. 
