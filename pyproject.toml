@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-bibtexparser = "^1.4.1"
+bibtexparser = "^2.0.0b8"
 
 
 [build-system]
