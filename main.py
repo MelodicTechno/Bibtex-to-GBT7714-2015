@@ -1,12 +1,16 @@
-import sys
+import csv
+import datetime
 import os
+import re
+import sys
 
 import bibtexparser
-import datetime
-import string
-import re
 
 NOW = datetime.datetime.now().strftime('%Y-%m-%d')
+with open("Chinese_surname.csv", "r") as f:
+    reader = csv.reader(f)
+    CHINESE_SURNAME = [str(row[0]).upper() for row in reader]
+# print(f"Chinese surname: {CHINESE_SURNAME}")
 
 BOOK_TYPE = {'article': 'J',
              'book': 'M',
@@ -64,9 +68,9 @@ class BibParser:
                 self.url = ''
 
         self.year = bib_entries['year'] + ','
-        self.authors = self.authors = [author.strip() for author in re.split(r'\band\b', bib_entries['author'])]  # and 的全词匹配
-        self.authors = [author.strip().upper() for author in self.authors]
-        print(self.authors)
+        self.authors = [author.strip() for author in re.split(r'\band\b', bib_entries['author'])]  # and 的全词匹配
+        self.normal_name()
+        # print(self.authors)
         self.title = bib_entries['title'] + ' '
         self.title = self.title[0].upper() + self.title[1:]
         self.ID = bib_entries['ID']
@@ -92,6 +96,28 @@ class BibParser:
         outputString += self.doi
 
         return outputString
+
+    def normal_name(self):
+        global CHINESE_SURNAME
+        normal_authors = []
+        for author_name in self.authors:
+            if ',' in author_name:  # 有逗号的话前面是姓
+                surname = author_name.split(',')[0].upper().strip()  # 姓氏要求全部大写
+                g_name = author_name.split(',')[1].lower().strip()  # 名暂时全部小写，后面处理
+            else:  # 没有逗号的话后面是姓
+                surname = ' '.join(author_name.strip().split(' ')[1:]).upper().replace('.',
+                                                                                       '')  # 姓氏要求全部大写，有可能存在中间名，也提成姓，去掉姓的 '.'
+                g_name = author_name.strip().split(' ')[0].lower()  # 名暂时全部小写，后面处理
+                # print(f"Warning: surname '{surname}' , gname:{g_name}。")
+            if surname.upper() in CHINESE_SURNAME:  # 如果是中文姓氏，名完整保留，首字母大写
+                # print(f"Chinese surname: {surname}")
+                g_name = g_name.capitalize()
+            else:  # 非中文姓氏
+                g_name = [name.replace('.', '').capitalize() for name in g_name.split(' ')]  # 去掉 ".", 首字母大写
+                g_name = " ".join([name[0] for name in g_name])  # 仅保留首字母
+            full_name = surname + ' ' + g_name
+            normal_authors.append(full_name)
+        self.authors = normal_authors
 
 
 def bibtex_to_7714(bib_path) -> list[str]:
@@ -131,7 +157,6 @@ def main():
     with open(f'{os.path.splitext(os.path.basename(bib_path))[0]}_bgt7714.txt', 'w') as f:
         for index, item in enumerate(result):
             f.write(f'[{index + 1}] {item}\n')
-
 
 
 if __name__ == '__main__':
