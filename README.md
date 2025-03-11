@@ -167,4 +167,4 @@ python utility/chineseSurnameCombination.py <name1> <name2> <name3> ...
 
 [patreon-shield]: https://img.shields.io/badge/-patreon-black.svg?style=for-the-badge&logo=patreon&colorB=555
 
-[patreon-url]: https://patreon.com/ross376
+[patreon-url]: https://patreon.com/rosszhu?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink
